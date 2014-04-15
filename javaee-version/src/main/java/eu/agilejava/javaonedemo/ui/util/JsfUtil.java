@@ -37,6 +37,12 @@ import javax.faces.model.SelectItem;
  */
 public class JsfUtil {
 
+   /**
+    * Hidden constructor for utility class.
+    */
+   private JsfUtil() {
+   }
+   
    public static SelectItem[] getSelectItems(List<?> entities, boolean selectOne) {
       int size = selectOne ? entities.size() + 1 : entities.size();
       SelectItem[] items = new SelectItem[size];
